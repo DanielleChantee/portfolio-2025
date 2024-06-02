@@ -31,9 +31,6 @@ h4 {
     margin-bottom: 50px;
 }
 
-small {
-    font-weight: 200;
-}
 /* Clients Page */
 .card {
     box-shadow: 20px 10px 100px 1px rgba(255, 255, 255, 0.2) !important;
@@ -91,6 +88,9 @@ a {
     color: white;
 }
 
+.card small {
+    font-weight: 200;
+}
 
 /* Skills Page */
 
