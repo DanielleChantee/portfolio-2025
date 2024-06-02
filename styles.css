@@ -1,19 +1,33 @@
 /* Whole Site */
-.navbar-brand {
+
+.navbar-brand, h1 {
     font-family: "Italiana", sans-serif;
+}
+
+.navbar-brand {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
 }
 
 h1 {
-    font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 70px;
 }
 
-/* Homepage */
+h4, p, a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h4 {
+    color: white;
+    font-size: 14px;
+}
+    
+    /* Homepage */
 /* .homepage-section h1,  */
 .homepage-section p {
     margin-bottom: 50px;
@@ -28,7 +42,6 @@ h1 {
 a {
     text-decoration: none !important;
 }
-
 
 .card {
     position: relative;
@@ -59,7 +72,12 @@ a {
 }
 
 .text-wrapper {
+    min-height: 270px;
     position: relative;
+}
+
+.text-wrapper h3 {
+    font-size: 25px;
 }
 
 .text-wrapper h3,
@@ -71,4 +89,22 @@ a {
 .card:hover .text-wrapper h3,
 .card:hover .text-wrapper small {
     color: white;
+}
+
+
+/* Skills Page */
+
+#skills .col {
+    transition: transform 0.5s ease-out;
+}
+
+#skills .col:hover {
+    text-shadow: 0px 0px 40px #ffffff;
+    transform: scale(1.05);
+}
+
+#skills i {
+    color: lightgrey;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
