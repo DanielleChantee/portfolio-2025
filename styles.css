@@ -27,13 +27,13 @@ h4 {
     font-size: 14px;
 }
     
-    /* Homepage */
-/* .homepage-section h1,  */
 .homepage-section p {
     margin-bottom: 50px;
 }
 
-
+small {
+    font-weight: 200;
+}
 /* Clients Page */
 .card {
     box-shadow: 20px 10px 100px 1px rgba(255, 255, 255, 0.2) !important;
