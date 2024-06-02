@@ -1,3 +1,32 @@
 .card {
-    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 10px 10px 50px 5px rgba(255, 255, 255, 0.5) !important;
+    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
+    
+}
+
+a {
+    text-decoration: none !important;
+    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
+}
+
+/* a .card h3, a .card small {
+    visibility: hidden;
+}
+
+a .card h3:hover, a .card small:hover {
+    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
+    visibility: visible;
+} */
+
+
+.card h3, .card small {
+    color: rgba(255, 255, 255, 0); /* This makes the text invisible by setting it to transparent white */
+}
+
+.card:hover h3, .card:hover small {
+    color: white; /* This makes the text visible on hover by setting it to white */
+}
+
+body {
+    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
 }
