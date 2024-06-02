@@ -1,32 +1,47 @@
 .card {
-    box-shadow: 10px 10px 50px 5px rgba(255, 255, 255, 0.5) !important;
-    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
-    
+    box-shadow: 20px 10px 100px 1px rgba(255, 255, 255, 0.2) !important;
 }
 
 a {
     text-decoration: none !important;
-    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
 }
 
-/* a .card h3, a .card small {
-    visibility: hidden;
+
+.card {
+    position: relative;
+    transition: transform 0.4s ease; /* This makes the transform change smoothly */
 }
 
-a .card h3:hover, a .card small:hover {
-    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
-    visibility: visible;
-} */
-
-
-.card h3, .card small {
-    color: rgba(255, 255, 255, 0); /* This makes the text invisible by setting it to transparent white */
+.card:hover {
+    box-shadow: 20px 10px 100px 1px rgba(255, 255, 255, 0.5) !important;
+    transform: scale(1.1); /* This makes the card grow slightly when hovered */
 }
 
-.card:hover h3, .card:hover small {
-    color: white; /* This makes the text visible on hover by setting it to white */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
-body {
-    text-shadow: 0px 0px 10px 5px rgb(0, 0, 0) !important;
+.card:hover::before {
+    opacity: 1;
+}
+
+.text-wrapper {
+    position: relative;
+}
+
+.text-wrapper h3, .text-wrapper small {
+    color: rgba(255, 255, 255, 0);
+    transition: color 0.3s ease;
+}
+
+.card:hover .text-wrapper h3, .card:hover .text-wrapper small {
+    color: white;
 }
