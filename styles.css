@@ -54,7 +54,7 @@ h4 {
   }
 
 
-  .glow {
+  .btn.glow {
     position: relative;
     text-decoration: none;
     transition: all 0.2s;
