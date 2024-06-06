@@ -147,6 +147,18 @@ a {
     margin-bottom: 10px;
 }
 
+#skills svg {
+    fill: lightgrey;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#skills p {
+    color: lightgrey;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
 /* Page Effects */
 .page-transition-wrapper {
     position: fixed;
