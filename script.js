@@ -32,7 +32,6 @@ typeEffect();
 
 
 /* Page Effects */
-
 document.addEventListener('DOMContentLoaded', function() {
     var transitionWrapper = document.querySelector('.page-transition-wrapper');
   

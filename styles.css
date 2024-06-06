@@ -148,7 +148,6 @@ a {
 }
 
 /* Page Effects */
-/* Add to your styles.css */
 .page-transition-wrapper {
     position: fixed;
     top: 0;
@@ -166,5 +165,4 @@ a {
     opacity: 1;
     visibility: visible; /* Only visible when active */
   }
-  
   
