@@ -130,6 +130,38 @@ a {
     color: white;
 }
 
+/* Client Logos */
+
+.client-logos {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .client-logo-images {
+    display: flex;
+    animation: scrollLogos 60s linear infinite;
+  }
+  
+  .client-logo-images img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Adjust spacing between logos if needed */
+  }
+  
+  @keyframes scrollLogos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 100px)); /* Move it left by 100% of its width plus the width of one image */
+    }
+  }
+  
+  
+  
+  
 /* Skills Page */
 
 #skills .col {
