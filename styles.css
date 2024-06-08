@@ -147,17 +147,19 @@ a {
   .client-logo-images img {
     width: 100px;
     height: 100px;
-    margin-right: 10px; /* Adjust spacing between logos if needed */
+    margin-right: 100px; 
   }
   
   @keyframes scrollLogos {
     0% {
-      transform: translateX(0);
+      transform: translateX(calc(-100% - 100px)); 
     }
     100% {
-      transform: translateX(calc(-100% - 100px)); /* Move it left by 100% of its width plus the width of one image */
+      transform: translateX(0); /* End at the original starting position */
     }
   }
+  
+      
   
   
   
