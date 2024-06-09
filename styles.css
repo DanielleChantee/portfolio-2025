@@ -107,7 +107,7 @@ h4 {
 }
 
 #client-feature-rows .card {
-  width: 100% !important;
+  height: 250px !important;
 }
 
 #client-feature-rows .card {
@@ -132,6 +132,12 @@ h4 {
   #client-feature-rows #adios-plastic-row,
   #client-feature-rows #bubbl-row {
     flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  #client-feature-rows .card {
+    height: 400px !important;
   }
 }
 
