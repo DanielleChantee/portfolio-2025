@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Danielle Adeyemo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+
+  <body class="bg-black">
+    <div>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black w-100"
+        aria-label="Fifth navbar example"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./">Danielle Adeyemo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample05"
+            aria-controls="navbarsExample05"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./clients.html">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./figma.html">Figma</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./skills.html">Skills</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Contact</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="mailto:daniellechantee@gmail.com"
+                      target="_blank"
+                      >Email</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.linkedin.com/in/danielleadeyemo/"
+                      target="_blank"
+                      >Linkedin</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Text -->
+      <!-- <div class="">
+        <div class="p-5 text-center bg-black">
+          <div class="container py-5">
+            <h1 class="text-light">About</h1>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Introduction -->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+            <img
+              src="./images/esl-devices-image.png"
+              class="d-block img-fluid"
+              alt="esl website on multiple devices"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1
+              class="fw-bold text-light lh-1 mb-3 text-center about-main-title"
+            >
+              Experienced Web Developer
+            </h1>
+            <p class="lead text-light text-center">
+              Specializing in web development, creating dynamic and responsive
+              websites
+            </p>
+            <div class="d-grid gap-2 d-flex justify-content-center">
+              <a
+                href="./clients.html"
+                class="align-items-center btn btn-light btn-md px-4 rounded-pill glow"
+                type="button"
+              >
+                View Clients
+              </a>
+              <a
+                href="./skills.html"
+                class="align-items-center btn btn-outline-secondary btn-md px-4 rounded-pill"
+                type="button"
+              >
+                View Skills
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------- Service Cards -------------------- -->
+
+      <div class="container px-4 py-5" id="service cards">
+        <h2 class="pb-2 border-bottom text-center text-light">Services</h2>
+
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 justify-content-center"
+        >
+          <div class="card bg-dark" style="width: 18rem">
+            <img
+              src="/images/esl-logo.png"
+              class="card-img-top"
+              alt="service image"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Card title</h5>
+              <p class="card-text text-light">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Tags -->
+    <div id="service-tags" class="">
+      <div class="p-5 text-center bg-black">
+        <div
+          class="container py-5 d-flex flex-wrap gap-2 justify-content-center"
+        >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Code Modification</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Theme Development</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Dynamic Web Layout Creation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Responsive Web Design</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Feature Integration</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >App Integration</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Version Contro</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Mobile-First Development</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Custom Section Creation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Cross-Browser Compatibility Testing</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Shopify CLI Utilisation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Wireframe Transformation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Quality Assurance</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Code Implementation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Figma Design</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Website Design</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Product Migration</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Product Updating</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Content Migration & Integration</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Bug Resolution</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Application-Driven Content Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Website Migration</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Website Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Performance Monitoring</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >User Experience Enhancement</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Graphic Design</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Project Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Client Communication</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Client Training and Support</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Client Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Content Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Content Creation</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Social Media Management</span
+          >
+          <span class="badge rounded-pill border border-secondary p-2"
+            >Content & Video Editing</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="page-transition-wrapper"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
