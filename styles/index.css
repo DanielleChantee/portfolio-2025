@@ -18,21 +18,24 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
 }
-.image-banner h1 {
+.image-banner h1,
+.content h1 {
   font-size: 50px;
   margin-bottom: 10px;
 }
-.image-banner h2 {
+.image-banner h2,
+.content h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.image-banner p {
+.image-banner p,
+.content p {
   font-size: 14px;
   margin-bottom: 40px;
 }
-.image-banner .button-row .btn {
+.image-banner .button-row .btn,
+.content .button-row .btn {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -43,4 +46,21 @@
 }
 .main-image-banner .button-row .btn:hover {
   background-color: #252525;
+}
+
+/* ------- */
+.content-section {
+  background-color: black;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-section .button-row .btn {
+  background-color: white;
+  color: black;
+}
+.content-section .content {
+  color: white;
 }
