@@ -47,7 +47,7 @@ h4 {
 }
 
 /* Button Glow Effect */
-.btn-black {
+.glow-black {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   animation: glowblack 2s infinite alternate;
 }
@@ -61,7 +61,7 @@ h4 {
   }
 }
 
-.btn-white {
+.glow-white {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
   animation: glowwhite 2s infinite alternate;
 }
