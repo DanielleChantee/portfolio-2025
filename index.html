@@ -18,6 +18,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
     />
+
+    <!-- SPLIDE CSS -->
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    "
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -60,9 +69,57 @@
         <div class="button-row">
           <a href="./client-work.html" class="btn">View Clients</a>
         </div>
-        <div class="carousel"></div>
+
         <div class="logo-marquee"></div>
       </div>
     </div>
+
+    <div
+      id="carousel"
+      class="splide"
+      style="margin-top: 50px; max-width: 1410px; margin: 0 auto"
+    >
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./images/esl-image-square.jpg" alt="Image 1" />
+          </li>
+          <li class="splide__slide">
+            <img src="./images/pets-purest-image-square.jpg" alt="Image 2" />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="./images/bottle-brush-ferments-image-square.jpg"
+              alt="Image 3"
+            />
+          </li>
+          <li class="splide__slide">
+            <img src="./images/fudge-kitchen-image-square.jpg" alt="Image 4" />
+          </li>
+          <li class="splide__slide">
+            <img src="./images/esl-image-square.jpg" alt="Image 1" />
+          </li>
+          <li class="splide__slide">
+            <img src="./images/pets-purest-image-square.jpg" alt="Image 2" />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="./images/bottle-brush-ferments-image-square.jpg"
+              alt="Image 3"
+            />
+          </li>
+          <li class="splide__slide">
+            <img src="./images/fudge-kitchen-image-square.jpg" alt="Image 4" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
