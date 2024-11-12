@@ -49,12 +49,14 @@
   background-color: #252525;
 }
 
-/* .clients .content-section {
+.clients.content-section {
   height: max-content;
-} */
+  padding: 40px 0;
+}
 
-/* .clients .content-section .content {
-} */
+.clients.content-section .content {
+  margin: 70px auto;
+}
 
 /* -------- */
 #carousel {
@@ -119,3 +121,30 @@
 }
 
 /* Client Logos */
+
+.client-logos {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.client-logo-images {
+  display: flex;
+  animation: scrollLogos 60s linear infinite;
+}
+
+.client-logo-images img {
+  width: 100px;
+  height: 100px;
+  margin-right: 100px;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(calc(-100% - 100px));
+  }
+  100% {
+    transform: translateX(0); /* End at the original starting position */
+  }
+}

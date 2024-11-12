@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     rewind: true,
     autoplay: true,
     interval: 3000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     breakpoints: {
       1410: {
         perPage: 3,

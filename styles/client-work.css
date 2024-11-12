@@ -49,6 +49,11 @@
   background-color: #252525;
 }
 
+/* Recent Clients */
+.recent-clients a {
+  color: black;
+}
+
 /* Clients */
 .client-section {
   width: calc(100% - 40px);

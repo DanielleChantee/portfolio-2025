@@ -14,6 +14,7 @@ label {
   display: block;
   margin-bottom: 10px;
 }
+
 input,
 textarea,
 button {
@@ -25,6 +26,7 @@ button {
   display: flex;
   justify-content: center;
 }
+
 button {
   text-decoration: none;
   background-color: black;
@@ -38,6 +40,7 @@ button {
   border: none;
   width: max-content;
 }
+
 button:hover {
   background-color: #444;
 }
