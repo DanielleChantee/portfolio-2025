@@ -70,6 +70,14 @@
   font-family: "Playfair Display", serif;
 }
 
+.client-heading {
+  font-size: 28px;
+  margin-top: 50px;
+}
+.client-subheading {
+  margin-bottom: 50px;
+}
+
 .client-content {
   display: flex;
   flex-direction: row; /* Arrange items in a row */
