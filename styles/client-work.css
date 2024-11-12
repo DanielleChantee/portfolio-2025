@@ -1,0 +1,137 @@
+.client-work-image-banner {
+  background-image: url("../images/pexels-darina-belonogova-8003994.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-banner .image-banner-content {
+  color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.image-banner h1,
+.content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.image-banner h2,
+.content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.image-banner p,
+.content p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.button-row .btn {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 40px;
+  transition: background-color 0.4s;
+}
+.main-image-banner .button-row .btn:hover {
+  background-color: #252525;
+}
+
+/* Clients */
+.client-section {
+  width: calc(100% - 40px);
+  margin: auto;
+}
+
+.client-row {
+  margin: 20px auto;
+  text-align: center; /* Center the headings */
+}
+
+.client-heading,
+.client-subheading {
+  font-family: "Playfair Display", serif;
+}
+
+.client-content {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.client-image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+}
+
+.client-text-wrapper {
+  width: 50%;
+  max-width: 500px;
+}
+
+.client-text-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  width: 100%;
+}
+
+.client-text {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.image-left {
+  order: -1; /* Keep image on the left */
+  margin-right: 20px;
+}
+
+.image-right {
+  order: 1; /* Keep image on the right */
+  margin-left: 20px;
+}
+
+.text-right {
+  order: 1;
+  margin-left: 20px;
+}
+
+.text-left {
+  order: -1;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .client-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .client-image,
+  .client-text {
+    width: calc(100% - 20px); /* Make each element take full width */
+    margin: 10px auto;
+  }
+
+  .image-left,
+  .image-right,
+  .text-left,
+  .text-right {
+    order: unset; /* Reset order */
+  }
+}
