@@ -8,7 +8,11 @@ body {
 li,
 a,
 span,
-p {
+p,
+label,
+input,
+textarea,
+button {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -51,4 +55,28 @@ nav ul li a {
 }
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* ------- */
+.content-section {
+  background-color: black;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content-section .content {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content-section .button-row .btn {
+  background-color: white;
+  color: black;
+  margin-bottom: 40px;
 }

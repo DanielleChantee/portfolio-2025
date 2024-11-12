@@ -49,30 +49,6 @@
   background-color: #252525;
 }
 
-/* ------- */
-.content-section {
-  background-color: black;
-  min-height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.content-section .content {
-  color: white;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.content-section .button-row .btn {
-  background-color: white;
-  color: black;
-  margin-bottom: 40px;
-}
-
 /* .clients .content-section {
   height: max-content;
 } */
