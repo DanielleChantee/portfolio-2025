@@ -28,6 +28,53 @@ h4 {
   font-style: normal;
 }
 
+/* Button */
+.btn {
+  text-decoration: none;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 40px;
+  transition: background-color 0.4s;
+}
+
+.btn:hover {
+  background-color: #252525;
+}
+
+/* Button Glow Effect */
+.btn-black {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  animation: glowblack 2s infinite alternate;
+}
+
+@keyframes glowblack {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgb(0, 0, 0);
+  }
+}
+
+.btn-white {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  animation: glowwhite 2s infinite alternate;
+}
+
+@keyframes glowwhite {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+}
+
 /* Header */
 header {
   background-color: black;
