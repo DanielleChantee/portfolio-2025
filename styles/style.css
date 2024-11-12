@@ -80,3 +80,11 @@ nav ul li a:hover {
   color: black;
   margin-bottom: 40px;
 }
+
+/* Footer */
+footer {
+  background-color: #c7b4a0;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+}

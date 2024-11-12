@@ -62,12 +62,12 @@
 
 .client-row {
   margin: 20px auto;
-  text-align: center; /* Center the headings */
 }
 
 .client-heading,
 .client-subheading {
   font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 .client-heading {
@@ -99,14 +99,22 @@
   max-width: 500px;
 }
 
+.client-heading-text-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5px;
+}
+
 .client-text-heading {
+  display: flex;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  width: 100%;
 }
 
 .client-text {
   font-family: "Poppins", sans-serif;
+  margin: 0;
   width: 100%;
 }
 
@@ -132,13 +140,17 @@
 
 @media (max-width: 768px) {
   .client-content {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;
   }
 
   .client-image,
   .client-text {
     width: calc(100% - 20px); /* Make each element take full width */
     margin: 10px auto;
+  }
+
+  .client-text-wrapper {
+    width: 100%;
   }
 
   .image-left,
@@ -148,3 +160,6 @@
     order: unset; /* Reset order */
   }
 }
+
+/* -------------------- */
+/* Featured Clients */

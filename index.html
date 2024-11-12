@@ -6,53 +6,21 @@
 
     <title>Danielle Adeyemo</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Google SVGS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
-    />
-
-    <!-- SPLIDE CSS -->
-    <link
-      href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    "
-      rel="stylesheet"
-    />
-
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- Placeholder for external CSS links -->
+    <div id="styles-placeholder"></div>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+
+    <!-- SPLIDE -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <!-- <li><a href="about.html">About</a></li> -->
-          <li><a href="client-work.html">Client Work</a></li>
-          <!-- <li><a href="services.html">Services</a></li> -->
-          <!-- <li><a href="design.html">Design</a></li> -->
-          <!-- <li><a href="projects.html">Projects</a></li> -->
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <!-- IMAGE BANNER -->
     <div class="main-image-banner image-banner">
@@ -242,10 +210,37 @@
       </div>
     </div>
 
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- ---------- -->
+
+    <!-- JavaScript to dynamically load the header, footer, and styles -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading header:", error));
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading footer:", error));
+
+      // Load CSS styles
+      fetch("styles.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("styles-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading styles:", error));
+    </script>
     <!-- Scripts -->
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
 
     <script src="scripts.js"></script>
   </body>
