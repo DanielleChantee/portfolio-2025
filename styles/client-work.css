@@ -80,7 +80,7 @@
 
 .client-content {
   display: flex;
-  flex-direction: row; /* Arrange items in a row */
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
