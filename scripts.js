@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     carousel.mount();
+    carouselElement.classList.add("is-initialized");
   }
 
   var featuredClientsElement = document.querySelector("#featured-clients");
@@ -41,5 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     featuredClients.mount();
+    featuredClientsElement.classList.add("is-initialized");
   }
 });
