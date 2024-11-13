@@ -178,16 +178,6 @@
 #featured-clients .splide__track {
   padding: 0 20px;
 }
-
-/* #featured-clients .splide__slide {
-  flex: 0 0 300px;
-  margin-right: 70px;
-}
-
-#featured-clients .splide__slide:last-child {
-  margin-right: 0;
-} */
-
 #featured-clients .splide__slide img {
   max-width: 500px;
   max-height: 500px;
@@ -210,4 +200,12 @@
 
 #featured-clients .splide__slide p {
   color: black;
+}
+
+#featured-clients .splide__arrow {
+  opacity: 0;
+}
+
+#featured-clients.splide:hover .splide__arrow {
+  opacity: 1;
 }
