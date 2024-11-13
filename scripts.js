@@ -44,4 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
     featuredClients.mount();
     featuredClientsElement.classList.add("is-initialized");
   }
+
+  // Services marquee
+  var marqueeElement = document.querySelector("#services-marquee .marquee");
+  if (marqueeElement) {
+    var textContent = marqueeElement.innerHTML;
+
+    // Duplicate text content to fill the viewport twice
+    while (marqueeElement.offsetWidth < window.innerWidth * 2) {
+      marqueeElement.innerHTML += textContent;
+    }
+
+    marqueeElement.style.animation = "scroll-right 20s linear infinite";
+  }
 });
