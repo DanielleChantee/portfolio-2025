@@ -55,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
       marqueeElement.innerHTML += textContent;
     }
 
-    marqueeElement.style.animation = "scroll-right 20s linear infinite";
+    marqueeElement.style.animation = "scroll-right 40s linear infinite";
   }
 });
