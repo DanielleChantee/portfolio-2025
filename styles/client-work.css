@@ -88,8 +88,12 @@
   width: 100%;
 }
 
+a .client-image {
+  width: 100%;
+}
+
+a .client-image,
 .client-image {
-  width: 50%;
   max-width: 500px;
   height: auto;
 }
