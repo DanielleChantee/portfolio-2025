@@ -213,3 +213,9 @@ a .client-image,
 #featured-clients.splide:hover .splide__arrow {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  #featured-clients .splide__arrow {
+    opacity: 1;
+  }
+}
