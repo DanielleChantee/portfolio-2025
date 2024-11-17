@@ -10,3 +10,9 @@ function loadSchema(filePath) {
     })
     .catch((error) => console.error("Error loading schema:", error));
 }
+
+// Wait until the DOM is fully loaded before running the loadSchema functions
+document.addEventListener("DOMContentLoaded", function () {
+  loadSchema("/schemas/person-schema.html");
+  loadSchema("/schemas/profile-page-schema.html");
+});
