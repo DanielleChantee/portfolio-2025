@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       interval: 3000,
       pauseOnHover: false,
       pauseOnFocus: false,
+      pagination: false,
       breakpoints: {
         1410: {
           perPage: 3,

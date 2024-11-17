@@ -35,15 +35,6 @@
   margin-bottom: 40px;
 }
 
-.clients.content-section {
-  height: max-content;
-  padding: 40px 0;
-}
-
-.clients.content-section .content {
-  margin: 70px auto;
-}
-
 /* -------- */
 #carousel {
   max-width: 1410px;
@@ -107,12 +98,13 @@
 }
 
 /* Client Logos */
-
 .client-logos {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  background-color: black;
   box-sizing: border-box;
+  padding: 50px 0;
 }
 
 .client-logo-images {
@@ -135,11 +127,88 @@
   }
 }
 
+/* Client content section */
+.clients.content-section {
+  background-color: white;
+  height: max-content;
+  padding: 40px 0;
+}
+
+.clients.content-section .content {
+  margin: 0 70px auto;
+}
+
+.clients .content {
+  color: black;
+}
+
+.clients .content .btn {
+  background-color: black;
+  color: white;
+}
+/* Clients carousel */
+.clients #carousel {
+  padding: 40px 0;
+}
+
+.splide__arrow--prev {
+  right: 100px;
+}
+.splide__arrow--next {
+  left: 100px;
+}
+.clients #carousel img {
+  /* padding: 5px; */
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+}
+
+.clients #carousel .splide__arrows {
+  position: absolute;
+  right: 150px;
+  top: 0;
+  margin-bottom: auto;
+}
+
+.clients #carousel .splide__arrow {
+  background: black;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+}
+
+.clients #carousel .splide__arrow svg {
+  fill: white;
+}
+
+/* .clients #carousel .splide__slide {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  animation: glowblack 2s infinite alternate;
+  overflow-y: visible;
+  padding: 10px 0 !important;
+}
+
+.clients #carousel .splide__track {
+  overflow-y: visible;
+  padding: 40px 0 !important;
+} */
+
 /* SERVICES */
+.services.content-section {
+  min-height: 500px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.services .content {
+  margin: auto;
+}
+
 #services-marquee {
   overflow: hidden;
   width: 100%;
   background-color: #ffffff;
+  border: solid;
   font-family: "Poppins", sans-serif;
   font-size: 50px;
   color: #000000;
@@ -165,5 +234,47 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+.service-features {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 40px;
+}
+
+.service-item {
+  box-sizing: border-box;
+  flex: 1 1 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .service-item {
+    flex: 1 1 50%;
+  }
+}
+.service-heading,
+.service-paragraph {
+  color: white;
+}
+
+.service-item {
+  flex: 1 1 25%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media (max-width: 989px) {
+  .service-item {
+    flex: 1 1 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .service-item {
+    flex: 1 1 100%;
   }
 }
