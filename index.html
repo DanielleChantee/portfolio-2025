@@ -13,8 +13,41 @@
       CSS
     </title>
 
-    <!-- Schemas -->
-    <script src="/scripts/load-schemas.js" defer></script>
+    <!-- Person Schema  -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Danielle Adeyemo",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://daniellechantee.github.io/portfolio/",
+        "sameAs": ["https://www.linkedin.com/in/danielleadeyemo/"],
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Shopify",
+          "Liquid",
+          "Node.js"
+        ]
+      }
+    </script>
+
+    <!-- Profile Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Danielle Adeyemo - Full-Stack Developer Portfolio",
+        "description": "Explore the portfolio and skills of Danielle Adeyemo, a Full-Stack developer specialising in web development and Shopify.",
+        "url": "https://daniellechantee.github.io/portfolio/",
+        "about": {
+          "@type": "Person",
+          "name": "Danielle Adeyemo",
+          "jobTitle": "Full-Stack Developer"
+        }
+      }
+    </script>
 
     <!-- Placeholder for external CSS links -->
     <div id="styles-placeholder"></div>
@@ -279,14 +312,6 @@
 
     <!-- Placeholder for Footer -->
     <div id="footer-placeholder"></div>
-    <!-- ---------- -->
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        loadSchema("/schemas/person-schema.html");
-        loadSchema("/schemas/profile-page-schema.html");
-      });
-    </script>
 
     <!-- JavaScript to dynamically load the header, footer, and styles -->
     <script>
