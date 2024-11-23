@@ -3,7 +3,7 @@ name: Deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger deployment on push to main branch
+      - main # Trigger deployment on push to the main branch
 
 jobs:
   build:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Build Jekyll site
         run: |
-          bundle exec jekyll build  # Build the site into the _site folder
+          bundle exec jekyll build # Build the site into the _site folder
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
