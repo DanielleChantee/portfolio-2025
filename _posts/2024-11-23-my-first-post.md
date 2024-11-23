@@ -1,28 +1,12 @@
 ---
 layout: post
-title: "My First Blog Post"
-date: 2024-11-23 10:00:00 +0000
-categories: jekyll blogging
-tags: ["jekyll", "blogging", "tutorial"]
+title: "My First Post"
+date: 2024-11-23
+author: Danielle
+categories: [web development, portfolio]
+tags: [Jekyll, blog, web design]
+image: "images/profile-picture.jpeg"
+excerpt: "Welcome to my first post! Here's an introduction to my portfolio and my work as a web developer."
 ---
 
-# My First Blog Post
-
-Welcome to my first blog post! This is where I will start writing about my experiences and insights as a Shopify developer.
-
-## Why Jekyll?
-
-Jekyll is a great tool for creating simple static sites, and it works really well with GitHub Pages. You can write your posts using Markdown or HTML, and Jekyll will process them into static files.
-
-Here's a basic example of Liquid in Jekyll:
-
-{% if site.posts.size > 0 %}
-
-  <ul>
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No posts yet!</p>
-{% endif %}
+Welcome to my first post! In this post, I will introduce myself and provide an overview of the projects I've worked on as a web developer. Stay tuned for more updates and insights into my work!
