@@ -1,0 +1,65 @@
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 700px;
+
+  text-align: center;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+button {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 10px 40px;
+  margin: 5px auto;
+  border-radius: 40px;
+  transition: background-color 0.4s;
+  cursor: pointer;
+  border: none;
+  width: max-content;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* ------- */
+.contact.content-section {
+  background-color: white;
+  min-height: 100px;
+}
+
+.contact.content-section .content {
+  color: black;
+}
+
+.contact.content-section h2 {
+  font-size: 28px;
+}
+
+.contact.content-section .button-row .btn {
+  background-color: black;
+  color: white;
+}

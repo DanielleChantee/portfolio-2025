@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <title>
+      Danielle Adeyemo – Full-Stack Web Developer | Shopify, JavaScript, HTML,
+      CSS
+    </title>
+
+    <!-- Placeholder for external CSS links -->
+    <div id="styles-placeholder"></div>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/client-work.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+
+    <!-- SPLIDE -->
+    <script src="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+     "></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- IMAGE BANNER -->
+    <div class="client-work-image-banner image-banner">
+      <div class="image-banner-content">
+        <h1 class="animate__animated animate__bounce">Contact</h1>
+        <div class="button-row"></div>
+      </div>
+    </div>
+
+    <div class="contact content-section">
+      <div class="content">
+        <h2>Get In Touch</h2>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form action="https://formspree.io/f/mgveyylg" method="POST">
+      <label>
+        Email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Message:
+        <textarea name="message"></textarea>
+      </label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- ---------- -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load header
+        fetch("header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            console.log("Header loaded");
+            document.getElementById("header-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading header:", error));
+
+        // Load footer
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            console.log("Footer loaded");
+            document.getElementById("footer-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading footer:", error));
+
+        // Load CSS styles
+        fetch("styles.html")
+          .then((response) => response.text())
+          .then((data) => {
+            console.log("Styles loaded");
+            document.getElementById("styles-placeholder").innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading styles:", error));
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
