@@ -13,7 +13,46 @@
       Home | Danielle Adeyemo – Full-Stack Web Developer | Shopify,
       JavaScript, HTML, CSS
     </title>
+    <!-- Placeholder for external CSS links -->
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Google Symbols -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check"
+/>
+<!-- Google SVGS -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
+/>
+
+<!-- SPLIDE CSS -->
+<link
+  href="
+ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+ "
+  rel="stylesheet"
+/>
+
+<!-- Animate CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/styles/style.css">
+    <!-- SPLIDE -->
+    <script src="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+     "></script>
   </head>
   <body>
     <!-- Header -->
@@ -81,17 +120,8 @@
       }
     </script>
 
-    <!-- Placeholder for external CSS links -->
-    <div id="styles-placeholder"></div>
-
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-
-    <!-- SPLIDE -->
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
   </head>
   <body>
     <!-- IMAGE BANNER -->
@@ -339,7 +369,7 @@
       </div>
 
       <!-- Blog posts section -->
-      <h2>Latest Blog Posts</h2>
+      <!-- <h2>Latest Blog Posts</h2>
       <ul>
         
         <li>
@@ -347,22 +377,8 @@
           - November 23, 2024
         </li>
         
-      </ul>
+      </ul> -->
     </div>
-
-    <!-- JavaScript to dynamically load the header, footer, and styles -->
-    <script>
-      // Load CSS styles
-      fetch("styles.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("styles-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading styles:", error));
-    </script>
-
-    <!-- Scripts -->
-    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
 </main>
@@ -372,5 +388,8 @@
   <p>&copy; 2024 Danielle Adeyemo. All rights reserved.</p>
 </footer>
 
+
+    <!-- Scripts -->
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
