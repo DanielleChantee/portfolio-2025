@@ -9,12 +9,32 @@
     />
 
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-
     <title>
-      Danielle Adeyemo – Full-Stack Web Developer | Shopify, JavaScript, HTML,
-      CSS
+      Home | Danielle Adeyemo – Full-Stack Web Developer | Shopify,
+      JavaScript, HTML, CSS
     </title>
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="about.html">About</a></li> -->
+      <li><a href="client-work.html">Client Work</a></li>
+      <!-- <li><a href="services.html">Services</a></li> -->
+      <!-- <li><a href="design.html">Design</a></li> -->
+      <!-- <li><a href="projects.html">Projects</a></li> -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
+
+    <main><!DOCTYPE html>
+<html lang="en">
+  <head>
     <!-- Person Schema  -->
     <script type="application/ld+json">
       {
@@ -74,9 +94,6 @@
     "></script>
   </head>
   <body>
-    <!-- HEADER -->
-    <div id="header-placeholder"></div>
-
     <!-- IMAGE BANNER -->
     <div class="main-image-banner image-banner">
       <div class="image-banner-content">
@@ -324,36 +341,17 @@
       <!-- Blog posts section -->
       <h2>Latest Blog Posts</h2>
       <ul>
-        {% for post in site.posts %}
+        
         <li>
-          <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date:
-          "%B %d, %Y" }}
+          <a href="/2024/11/23/my-first-post/">My First Post</a>
+          - November 23, 2024
         </li>
-        {% endfor %}
+        
       </ul>
     </div>
 
-    <!-- Placeholder for Footer -->
-    <div id="footer-placeholder"></div>
-
     <!-- JavaScript to dynamically load the header, footer, and styles -->
     <script>
-      // Load header
-      fetch("header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading header:", error));
-
-      // Load footer
-      fetch("footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading footer:", error));
-
       // Load CSS styles
       fetch("styles.html")
         .then((response) => response.text())
@@ -365,5 +363,14 @@
 
     <!-- Scripts -->
     <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
+</main>
+
+    <!-- Footer -->
+    <footer>
+  <p>&copy; 2024 Danielle Adeyemo. All rights reserved.</p>
+</footer>
+
   </body>
 </html>
