@@ -3,30 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Danielle Adeyemo is a skilled full-stack web developer specialising in Shopify, JavaScript, HTML, CSS, and responsive web design."
+    />
 
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-
     <title>
-      Danielle Adeyemo – Full-Stack Web Developer | Shopify, JavaScript, HTML,
-      CSS
+      Client Work | Danielle Adeyemo – Full-Stack Web Developer | Shopify,
+      JavaScript, HTML, CSS
     </title>
-
     <!-- Placeholder for external CSS links -->
-    <div id="styles-placeholder"></div>
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Google Symbols -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check"
+/>
+<!-- Google SVGS -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
+/>
+
+<!-- SPLIDE CSS -->
+<link
+  href="
+ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+ "
+  rel="stylesheet"
+/>
+
+<!-- Animate CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/client-work.css" />
-
+    <link rel="stylesheet" href="/styles/style.css">
     <!-- SPLIDE -->
     <script src="
      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
      "></script>
   </head>
   <body>
-    <!-- HEADER -->
-    <div id="header-placeholder"></div>
+    <!-- Header -->
+    <header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <!-- <li><a href="about.html">About</a></li> -->
+      <li><a href="client-work.html">Client Work</a></li>
+      <!-- <li><a href="services.html">Services</a></li> -->
+      <!-- <li><a href="design.html">Design</a></li> -->
+      <!-- <li><a href="projects.html">Projects</a></li> -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
+
+    <main><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/client-work.css" />
+  </head>
+  <body>
     <!-- IMAGE BANNER -->
     <div class="client-work-image-banner image-banner">
       <div class="image-banner-content">
@@ -662,41 +713,15 @@
         </div>
       </article>
     </section>
+  </body>
+</html>
+</main>
 
-    <!-- Placeholder for Footer -->
-    <div id="footer-placeholder"></div>
-    <!-- ---------- -->
+    <!-- Footer -->
+    <footer>
+  <p>&copy; 2024 Danielle Adeyemo. All rights reserved.</p>
+</footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Load header
-        fetch("header.html")
-          .then((response) => response.text())
-          .then((data) => {
-            console.log("Header loaded");
-            document.getElementById("header-placeholder").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading header:", error));
-
-        // Load footer
-        fetch("footer.html")
-          .then((response) => response.text())
-          .then((data) => {
-            console.log("Footer loaded");
-            document.getElementById("footer-placeholder").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading footer:", error));
-
-        // Load CSS styles
-        fetch("styles.html")
-          .then((response) => response.text())
-          .then((data) => {
-            console.log("Styles loaded");
-            document.getElementById("styles-placeholder").innerHTML = data;
-          })
-          .catch((error) => console.error("Error loading styles:", error));
-      });
-    </script>
 
     <!-- Scripts -->
     <script src="./scripts/scripts.js"></script>

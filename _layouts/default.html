@@ -13,7 +13,14 @@
       {{ page.title }} | Danielle Adeyemo – Full-Stack Web Developer | Shopify,
       JavaScript, HTML, CSS
     </title>
+    <!-- Placeholder for external CSS links -->
+    {% include styles.html %}
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ "/styles/style.css" | relative_url }}">
+    <!-- SPLIDE -->
+    <script src="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+     "></script>
   </head>
   <body>
     <!-- Header -->
@@ -23,5 +30,8 @@
 
     <!-- Footer -->
     {% include footer.html %}
+
+    <!-- Scripts -->
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

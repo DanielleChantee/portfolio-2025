@@ -52,17 +52,8 @@ title: Home
       }
     </script>
 
-    <!-- Placeholder for external CSS links -->
-    <div id="styles-placeholder"></div>
-
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-
-    <!-- SPLIDE -->
-    <script src="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-    "></script>
   </head>
   <body>
     <!-- IMAGE BANNER -->
@@ -310,7 +301,7 @@ title: Home
       </div>
 
       <!-- Blog posts section -->
-      <h2>Latest Blog Posts</h2>
+      <!-- <h2>Latest Blog Posts</h2>
       <ul>
         {% for post in site.posts %}
         <li>
@@ -318,21 +309,7 @@ title: Home
           - {{ post.date | date: "%B %d, %Y" }}
         </li>
         {% endfor %}
-      </ul>
+      </ul> -->
     </div>
-
-    <!-- JavaScript to dynamically load the header, footer, and styles -->
-    <script>
-      // Load CSS styles
-      fetch("styles.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("styles-placeholder").innerHTML = data;
-        })
-        .catch((error) => console.error("Error loading styles:", error));
-    </script>
-
-    <!-- Scripts -->
-    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
