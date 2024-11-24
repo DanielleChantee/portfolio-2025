@@ -5,4 +5,3 @@ baseurl: "" # Root directory
 permalink: /:year/:month/:day/:title/ # URL structure for posts
 
 markdown: kramdown # Defines markdown processor
-theme: minima # Default theme
