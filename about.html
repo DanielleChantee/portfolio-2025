@@ -1,75 +1,123 @@
+---
+layout: default
+title: About
+permalink: /about.html
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Person Schema  -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Danielle Adeyemo",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://daniellechantee.github.io/portfolio/",
+        "sameAs": ["https://www.linkedin.com/in/danielleadeyemo/"],
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Shopify",
+          "Liquid",
+          "Node.js"
+        ]
+      }
+    </script>
 
-    <title>Danielle Adeyemo</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google SVGS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=mail"
-    />
-
-    <!-- SPLIDE CSS -->
-    <link
-      href="
-    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-    "
-      rel="stylesheet"
-    />
+    <!-- Profile Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Danielle Adeyemo",
+          "jobTitle": "Full-Stack Developer",
+          "description": "Explore the portfolio and skills of Danielle Adeyemo, a Full-Stack developer specialising in web development and Shopify.",
+          "url": "https://daniellechantee.github.io/portfolio/",
+          "about": {
+            "@type": "Person",
+            "name": "Danielle Adeyemo",
+            "jobTitle": "Full-Stack Developer"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "United Kingdom"
+          },
+          "image": "https://daniellechantee.github.io/portfolio/images/profile-picture.jpeg",
+          "sameAs": ["https://www.linkedin.com/in/danielleadeyemo"]
+        }
+      }
+    </script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="client-work.html">Client Work</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="design.html">Design</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <!-- IMAGE BANNER -->
     <div class="main-image-banner image-banner">
       <div class="image-banner-content">
-        <h1>Danielle Adeyemo</h1>
-        <h2>Crafting Modern Web Experiences</h2>
-        <p>Full-stack developer specialising in Shopify Theme development</p>
-        <div class="button-row">
-          <a href="./client-work.html" class="btn">View Clients</a>
-          <a href="./design.html" class="btn">View Design Work</a>
-        </div>
+        <h1 class="animate__animated animate__bounce">About</h1>
       </div>
     </div>
 
-    <!-- CLIENTS -->
-    <div class="clients content-section">
+    <!-- Contact Options -->
+
+    <div class="about content-section">
+      <!-- CONTENT -->
       <div class="content">
-        <h1>Clients</h1>
-        <h2>Clients I’ve worked with</h2>
-        <p>Full-stack developer specialising in Shopify Theme development</p>
-        <div class="button-row">
-          <a href="./client-work.html" class="btn">View Clients</a>
-        </div>
+        <p>
+          Seasoned Shopify developer based in the UK with extensive experience
+          in designing and developing high-quality, responsive Shopify stores.
+        </p>
+        <p>
+          My expertise spans from code modification, transforming Figma designs
+          into functional web elements to integrating advanced features and
+          third-party apps to enhance user experience and store functionality.
+        </p>
       </div>
     </div>
+
+    <div class="about-features content-section">
+      <!-- CONTENT -->
+      <div class="content">
+        <h2>𝗪𝗵𝘆 𝗖𝗵𝗼𝗼𝘀𝗲 𝗠𝗲?</h2>
+        <p>🏆 Professional experience working for multiple Shopify agencies.</p>
+        <p>
+          ✅ Track record of developing high-quality, responsive Shopify stores.
+        </p>
+        <p>💻 Expertise in Shopify Liquid, JSON, and modern build processes.</p>
+        <p>
+          🤝 Strong collaboration skills and experience working in agile
+          environments.
+        </p>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <!-- Services Marquee -->
+    <!-- <div id="services-marquee">
+      <div class="marquee">
+        <span>Shopify Theme Development</span>
+        <span>E-commerce Solutions</span>
+        <span>Web Design</span>
+        <span>UX/UI Design</span>
+        <span>Marketing</span>
+        <span>Graphic Design</span>
+        <span>Branding</span>
+   
+        <span>Shopify Theme Development</span>
+        <span>E-commerce Solutions</span>
+        <span>Web Design</span>
+        <span>UX/UI Design</span>
+        <span>Marketing</span>
+        <span>Graphic Design</span>
+        <span>Branding</span>
+      </div>
+    </div> -->
   </body>
 </html>
