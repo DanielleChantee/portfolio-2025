@@ -7,9 +7,9 @@ form {
   justify-content: center;
   margin: auto;
   max-width: 700px;
-
   text-align: center;
 }
+
 label {
   display: block;
   margin-bottom: 10px;
@@ -45,6 +45,11 @@ button:hover {
   background-color: #444;
 }
 
+form .btn {
+  padding: 10px 40px;
+  margin: 5px auto;
+}
+
 /* ------- */
 .contact.content-section {
   background-color: white;
@@ -55,11 +60,32 @@ button:hover {
   color: black;
 }
 
-.contact.content-section h2 {
+.contact.content-section h2,
+.contact-options h2 {
   font-size: 28px;
 }
 
 .contact.content-section .button-row .btn {
   background-color: black;
   color: white;
+}
+
+/* ---------- */
+/* Contact Options */
+.contact-options {
+  min-height: 300px;
+}
+.contact-options h2 {
+  margin-bottom: 40px;
+}
+
+.contact-options a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.contact-options a:hover {
+  text-decoration: underline;
 }
