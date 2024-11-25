@@ -1,0 +1,22 @@
+.image-banner {
+  height: 400px;
+}
+.about.content-section {
+  min-height: 300px;
+  background-color: white;
+}
+.about .content {
+  color: black;
+}
+
+@media screen and (min-width: 990px) {
+  .about p {
+    margin: 40px auto;
+    max-width: 50%;
+    text-align: center;
+  }
+}
+.about-features {
+  background-color: black;
+  min-height: 400px;
+}

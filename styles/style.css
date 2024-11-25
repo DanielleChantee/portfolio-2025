@@ -111,9 +111,10 @@ nav ul li a:hover {
   min-height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
+  align-self: center;
   text-align: center;
+  width: 100%;
 }
 
 .content-section .content {
