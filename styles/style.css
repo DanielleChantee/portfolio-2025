@@ -76,35 +76,6 @@ h4 {
   }
 }
 
-/* Header */
-header {
-  background-color: black;
-  padding: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 0;
-}
-
-nav ul li {
-  padding: 5px;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
 /* ------- */
 .content-section {
   background-color: black;

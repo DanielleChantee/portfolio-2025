@@ -8,7 +8,11 @@
       content="Danielle Adeyemo is a skilled full-stack web developer specialising in Shopify, JavaScript, HTML, CSS, and responsive web design."
     />
 
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/logos/logo-white-small.jpg"
+      type="image/x-icon"
+    />
     <title>
       Contact | Danielle Adeyemo – Full-Stack Web Developer | Shopify,
       JavaScript, HTML, CSS
@@ -49,6 +53,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/portfolio/styles/style.css">
+    <link rel="stylesheet" href="/portfolio/styles/header.css">
     <!-- SPLIDE -->
     <script src="
      https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
@@ -56,17 +61,55 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <!-- <header>
   <nav>
+    <a href="index.html"
+      ><div class="logo">
+        <img src="./images/logos/logo-black.jpg" alt="logo" /></div
+    ></a>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="client-work.html">Client Work</a></li> -->
+<!-- <li><a href="services.html">Services</a></li> -->
+<!-- <li><a href="design.html">Design</a></li> -->
+<!-- <li><a href="projects.html">Projects</a></li> -->
+<!-- <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header> -->
+<header>
+  <nav>
+    <a href="index.html">
+      <div class="logo">
+        <img src="./images/logos/logo-black.jpg" alt="logo" />
+      </div>
+    </a>
+    <!-- Desktop Menu -->
+    <ul class="desktop-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="client-work.html">Client Work</a></li>
-      <!-- <li><a href="services.html">Services</a></li> -->
-      <!-- <li><a href="design.html">Design</a></li> -->
-      <!-- <li><a href="projects.html">Projects</a></li> -->
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Mobile Menu Wrapper -->
+    <div class="mobile-menu-wrapper">
+      <div class="menu-header">
+        <button class="close">&times;</button>
+      </div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="client-work.html">Client Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 

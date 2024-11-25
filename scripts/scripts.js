@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Splide Carousel for Main Carousel
   var carouselElement = document.querySelector("#carousel");
   if (carouselElement) {
     var carousel = new Splide(carouselElement, {
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     carouselElement.classList.add("is-initialized");
   }
 
+  // Splide Carousel for Featured Clients
   var featuredClientsElement = document.querySelector("#featured-clients");
   if (featuredClientsElement) {
     var featuredClients = new Splide(featuredClientsElement, {
@@ -46,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     featuredClientsElement.classList.add("is-initialized");
   }
 
-  // Services marquee
+  // Services Marquee
   var marqueeElement = document.querySelector("#services-marquee .marquee");
   if (marqueeElement) {
     var textContent = marqueeElement.innerHTML;
@@ -57,5 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     marqueeElement.style.animation = "scroll-right 40s linear infinite";
+  }
+
+  // Hamburger Menu Logic
+  const hamburger = document.querySelector(".hamburger");
+  const closeButton = document.querySelector(".mobile-menu-wrapper .close");
+  const mobileMenuWrapper = document.querySelector(".mobile-menu-wrapper");
+
+  if (hamburger && closeButton && mobileMenuWrapper) {
+    const toggleMenu = () => {
+      mobileMenuWrapper.classList.toggle("open");
+    };
+
+    // Open/close menu with hamburger button
+    hamburger.addEventListener("click", toggleMenu);
+
+    // Close menu with close button
+    closeButton.addEventListener("click", toggleMenu);
   }
 });
