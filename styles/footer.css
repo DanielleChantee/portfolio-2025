@@ -1,0 +1,16 @@
+.footer-contact {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.email-footer {
+  color: black;
+  width: 25px;
+}
+
+.linkedin-logo {
+  filter: brightness(0);
+  height: 17px;
+}
