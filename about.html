@@ -115,48 +115,65 @@
     <main><!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Person Schema  -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Danielle Adeyemo",
-        "jobTitle": "Full-Stack Developer",
-        "url": "https://daniellechantee.github.io/portfolio/",
-        "sameAs": ["https://www.linkedin.com/in/danielleadeyemo/"],
-        "skills": [
-          "HTML5",
-          "CSS3",
-          "JavaScript",
-          "Shopify",
-          "Liquid",
-          "Node.js"
-        ]
-      }
-    </script>
-
-    <!-- Profile Schema -->
+    <!-- ProfilePage Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
+        "name": "About Danielle Adeyemo - Shopify Developer & Front-End Specialist",
+        "url": "https://daniellechantee.github.io/portfolio/about",
+        "description": "Learn more about Danielle Adeyemo, an experienced Shopify Developer specialising in Shopify theme development, store customisation, and web design. Based in the UK, Danielle offers tailored solutions for businesses looking to elevate their e-commerce stores.",
         "mainEntity": {
           "@type": "Person",
           "name": "Danielle Adeyemo",
-          "jobTitle": "Full-Stack Developer",
-          "description": "Explore the portfolio and skills of Danielle Adeyemo, a Full-Stack developer specialising in web development and Shopify.",
-          "url": "https://daniellechantee.github.io/portfolio/",
-          "about": {
-            "@type": "Person",
-            "name": "Danielle Adeyemo",
-            "jobTitle": "Full-Stack Developer"
-          },
-          "location": {
-            "@type": "Place",
-            "name": "United Kingdom"
-          },
+          "jobTitle": "Shopify Developer",
           "image": "https://daniellechantee.github.io/portfolio/images/profile-picture.jpeg",
-          "sameAs": ["https://www.linkedin.com/in/danielleadeyemo"]
+          "description": "Danielle Adeyemo is a Shopify Developer with expertise in Shopify 2.0 themes, Liquid coding, and custom web development. With a focus on user experience and responsiveness, Danielle helps businesses create e-commerce platforms that drive conversions.",
+          "url": "https://daniellechantee.github.io/portfolio/",
+          "sameAs": [
+            "https://www.linkedin.com/in/danielleadeyemo",
+            "https://daniellechantee.github.io/portfolio/"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ipswich",
+            "addressCountry": "United Kingdom"
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance",
+            "url": "https://daniellechantee.github.io/portfolio/"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "daniellechantee@gmail.com",
+            "telephone": "+44 7913192349",
+            "areaServed": ["United Kingdom", "Global"],
+            "availableLanguage": ["English"]
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Shooters Hill Sixth Form College"
+          },
+          "skills": [
+            "Shopify Development",
+            "Liquid Template Coding",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Shopify App Integration",
+            "Custom Theme Development",
+            "Responsive Design",
+            "Web Performance Optimisation"
+          ],
+          "knowsAbout": [
+            "E-commerce",
+            "Web Design",
+            "UX/UI Design",
+            "Conversion Rate Optimisation",
+            "Shopify Plus Features"
+          ]
         }
       }
     </script>
